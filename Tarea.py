@@ -30,10 +30,14 @@ class Aplicacion:
         opciones2.add_command(label="Extendida", command=self.extendida)
         opciones2.add_separator()
         opciones2.add_command(label="Graficar", command=self.graficar)
+        opciones2.add_separator()
+        opciones2.add_command(label="Salir", command=self.salir)
         menubar1.add_cascade(label="Calculadora", menu=opciones2)
-
+        
         opciones3 = tk.Menu(menubar1, tearoff=0)
-        opciones3.add_command(label="Ingresar datos para encuesta:", command=self.basica)
+        opciones3.add_command(label="Ingresar datos para encuesta:", command=self.encuesta)
+        opciones3.add_separator()
+        opciones3.add_command(label="Salir", command=self.salir)
         menubar1.add_cascade(label="Encuesta", menu=opciones3)
     
 
@@ -66,6 +70,9 @@ class Aplicacion:
 
     def graficar(event=None):
          subprocess.run(["python", "Graficos.py"])
+
+    def encuesta(self):
+        subprocess.run(["python", "Encuesta1.py"])
 
     
 aplicacion1=Aplicacion()
