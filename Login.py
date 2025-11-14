@@ -64,11 +64,9 @@ class Aplicacion():
 
     def aceptar(self):
         if self.clave.get() == 'tkinter':
-            print("Acceso permitido")
             #Llamar al DashBoard
-            subprocess.run(["python", "dashboard.py"])
-            print("Usuario:   ", self.ctext1.get())
-            print("Contraseña:", self.ctext2.get())
+            subprocess.run(["python", "dashboardactual.py"])
+            
         else:
             print("Acceso denegado")
             self.clave.set("")
