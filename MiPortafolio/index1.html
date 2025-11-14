@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejemplo de estructura de documento HTML5 con secciones y formulario">
+    <title>Mi Sitio Personal</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Sitio Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Sobre Mí -->
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Hola, soy <strong>Sidar Fernando Rivas Berrios</strong>, desarrollador y entusiasta de la tecnología. Me apasiona crear sitios web funcionales, limpios y responsivos utilizando HTML5, CSS3 y JavaScript.</p>
+            <img src="C:\Users\SRIVAS\Documents\PythonMySQL\MiPortafolio\img\Yo.png" alt="Imagen representativa de Sidar" width="100" height="100">
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <article>
+                <h3>Proyecto 1: Sitio Web Educativo</h3>
+                <img src="C:\Users\SRIVAS\Documents\PythonMySQL\MiPortafolio\img\proyectos.jpg" alt="Vista previa del proyecto educativo" width="100" height="100">
+                <p>Este proyecto consiste en un sitio web informativo para instituciones educativas, con un diseño adaptable y accesible.</p>
+            </article>
+
+            <article>
+                <h3>Proyecto 2: Aplicación de Tareas</h3>
+                <img src="C:\Users\SRIVAS\Documents\PythonMySQL\MiPortafolio\img\Tareas.jpeg" alt="Vista previa de la aplicación de tareas" width="100" height="100">
+                <p>Aplicación web para la gestión de tareas, desarrollada con JavaScript y almacenamiento local del navegador.</p>
+            </article>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si deseas ponerte en contacto conmigo, completa el siguiente formulario:</p>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Sitio Web - Sidar Fernando Rivas Berrios</p>
+    </footer>
+</body>
+</html>
